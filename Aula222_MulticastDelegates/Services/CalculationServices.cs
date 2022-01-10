@@ -5,16 +5,16 @@ namespace Aula222_MulticastDelegates.Services
 {
     class CalculationServices
     {
-        public static void ShowMax(double x, double y)
+        public static void ShowMax(double x, double y) // Void, pois sera solicitada em Multicast
         {
             double max = (x > y) ? x : y;
-            Console.WriteLine(max);
+            Console.WriteLine("Maior numero: " + max);
         }
 
         public static void ShowSum(double x, double y)
         {
             double sum = x + y;
-            Console.WriteLine(sum);
+            Console.WriteLine("Soma: " + sum);
         }
     }
 }
